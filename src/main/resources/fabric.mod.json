@@ -13,7 +13,7 @@
     "xynisclient.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.14.22",
+    "fabricloader": ">=0.16.13",
     "minecraft": "1.20.1"
   }
 }
