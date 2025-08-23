@@ -1,0 +1,58 @@
+#color-slider .track{
+    -fx-background-color:transparent;
+}
+
+.choice-box .context-menu {
+-fx-background-color: black;
+}
+.choice-box .menu-item:focused {
+-fx-background-color: rgba(100, 100, 100);
+}
+.choice-box .menu-item > .label {
+-fx-text-fill: white;
+}
+.choice-box .menu-item:focused > .label {
+-fx-text-fill: black;
+}
+.choice-box {
+  -fx-mark-color: rgba(100, 100, 100);
+  -fx-background-radius: 15 15 15 15;
+  -fx-background-color: rgba(25, 25, 25);
+  -fx-font-size: 14;
+  -fx-font-weight: bold;
+}
+
+.choice-box > .label { -fx-text-fill: white; }
+
+.custom-text-area {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+    -fx-border-color: white;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+    -fx-padding: 3;
+}
+
+.custom-text-area .content {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0, 1;
+    -fx-background-radius: 10, 9;
+    -fx-padding: 3;
+}
+
+.custom-text-area .scroll-bar {
+    -fx-opacity: 0;
+    -fx-pref-width: 0;
+    -fx-pref-height: 0;
+}
+
+.custom-text-area .scroll-bar .thumb {
+    -fx-background-color: transparent;
+}
+
+.custom-text-area .viewport {
+    -fx-background-color: black;
+    -fx-background-radius: 10;
+}
