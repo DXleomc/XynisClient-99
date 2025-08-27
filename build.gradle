@@ -1,5 +1,5 @@
 plugins {
-    id "fabric-loom" version "1.6-SNAPSHOT"
+    id "fabric-loom" version "${loom_version}"
 }
 
 group = "com.example"
@@ -11,8 +11,15 @@ repositories {
 }
 
 dependencies {
-    minecraft "com.mojang:minecraft:1.20.1"
-    mappings loom.officialMojangMappings()
-    modImplementation "net.fabricmc:fabric-loader:0.14.24"
-    modImplementation "net.fabricmc.fabric-api:fabric-api:0.91.0+1.20.1"
+    // Minecraft
+    minecraft "com.mojang:minecraft:${minecraft_version}"
+
+    // Yarn mappings
+    mappings "net.fabricmc:yarn:${yarn_mappings}:v2"
+
+    // Fabric Loader
+    modImplementation "net.fabricmc:fabric-loader:${loader_version}"
+
+    // Fabric API
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${fabric_version}"
 }
